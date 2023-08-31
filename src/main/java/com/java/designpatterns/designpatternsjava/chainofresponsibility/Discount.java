@@ -4,11 +4,21 @@ import java.math.BigDecimal;
 
 public abstract class Discount {
 
-    protected Discount next;
+    private Discount next;
 
     public Discount(Discount next) {
         this.next = next;
     }
 
-    public abstract BigDecimal calculate(Budget budget);
+    public BigDecimal calculate(Budget budget) {
+        if (isValid(budget)) {
+            return doCalculation(budget);
+        }
+
+        return next.calculate(budget);
+    }
+
+    protected abstract boolean isValid(Budget budget);
+
+    protected abstract BigDecimal doCalculation(Budget budget);
 }

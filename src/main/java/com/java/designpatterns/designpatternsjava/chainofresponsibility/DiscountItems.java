@@ -9,11 +9,12 @@ public class DiscountItems extends Discount {
     }
 
     @Override
-    public BigDecimal calculate(Budget budget) {
-        if (budget.getItems() >= 5) {
-            return budget.getValue().multiply(new BigDecimal("0.05"));
-        }
+    protected boolean isValid(Budget budget) {
+        return budget.getItems() >= 5;
+    }
 
-        return next.calculate(budget);
+    @Override
+    protected BigDecimal doCalculation(Budget budget) {
+        return budget.getValue().multiply(new BigDecimal("0.05"));
     }
 }

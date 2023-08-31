@@ -9,7 +9,12 @@ public class DiscountZero extends Discount {
     }
 
     @Override
-    public BigDecimal calculate(Budget budget) {
+    protected boolean isValid(Budget budget) {
+        return true;
+    }
+
+    @Override
+    protected BigDecimal doCalculation(Budget budget) {
         return BigDecimal.ZERO;
     }
 }
