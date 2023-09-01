@@ -10,6 +10,14 @@ public class Budget {
     private int items;
     private BigDecimal value;
 
+    public Budget(int items, BigDecimal value) {
+        this.items = items;
+        this.value = value;
+    }
+
+    public Budget() {
+    }
+
     private BudgetState state = new BudgetOpen();
 
     public void approve() {
