@@ -41,3 +41,9 @@ Observer is a behavioral design pattern that lets you define a subscription mech
 Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 
 [Read more](https://refactoring.guru/design-patterns/adapter)
+
+## Decorator
+
+Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+
+[Read more](https://refactoring.guru/design-patterns/decorator)
