@@ -11,4 +11,8 @@ public abstract class BudgetState {
     public void decline(Budget budget) {
         throw new RuntimeException("Budget cannot be declined");
     }
+
+    public void close(Budget budget) {
+        throw new RuntimeException("Budget cannot be closed");
+    }
 }

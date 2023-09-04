@@ -28,6 +28,10 @@ public class Budget {
         state.decline(this);
     }
 
+    public void close() {
+        state.close(this);
+    }
+
     public int getItems() {
         return items;
     }

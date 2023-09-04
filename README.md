@@ -35,3 +35,9 @@ Command is a behavioral design pattern that turns a request into a stand-alone o
 Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
 [Read more](https://refactoring.guru/design-patterns/observer)
+
+## Adapter
+
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+[Read more](https://refactoring.guru/design-patterns/adapter)
