@@ -47,3 +47,15 @@ Adapter is a structural design pattern that allows objects with incompatible int
 Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
 [Read more](https://refactoring.guru/design-patterns/decorator)
+
+## Composite
+
+Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+
+[Read more](https://refactoring.guru/design-patterns/composite)
+
+## Facade
+
+Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+[Read more](https://refactoring.guru/design-patterns/facade)
